@@ -21,57 +21,218 @@
       <div class="inner">
         <h1>Bukkit Maven Repos</h1>
         <h2></h2>
-        <a href="https://github.com/hintss/BukkitMavenRepoListThing" class="button"><small>View project on</small>GitHub</a>
+        <a href="https://github.com/hintss/BukkitMavenRepos" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h1>
+<a name="what-is-this-you-ask" class="anchor" href="#what-is-this-you-ask"><span class="octicon octicon-link"></span></a>What is this you ask?</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>This is a list of maven repos + dependency names for various libs/things used in bukkit plugin coding. More to be used as an index for me than for public use, but it'll probably be useful to someone. Just ctrl+f for the lib you need, I guess.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2>
+<a name="bukkit" class="anchor" href="#bukkit"><span class="octicon octicon-link"></span></a>Bukkit</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><a href="http://bukkit.org/">http://bukkit.org/</a>
+<a href="http://jd.bukkit.org/dev/apidocs/">http://jd.bukkit.org/dev/apidocs/</a></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>bukkit-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.bukkit.org/content/groups/public/<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>org.bukkit<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>bukkit<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+  <span class="nt">&lt;version&gt;</span>RELEASE<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h2>
+<a name="craftbukkit" class="anchor" href="#craftbukkit"><span class="octicon octicon-link"></span></a>CraftBukkit</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><a href="http://bukkit.org/">http://bukkit.org/</a></p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>bukkit-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.bukkit.org/content/groups/public/<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>org.bukkit<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>craftbukkit<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+  <span class="nt">&lt;version&gt;</span>RELEASE<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h2>
+<a name="metrics" class="anchor" href="#metrics"><span class="octicon octicon-link"></span></a>Metrics</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p><a href="https://github.com/Hidendra/Plugin-Metrics/wiki/Usage">https://github.com/Hidendra/Plugin-Metrics/wiki/Usage</a></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>mcstats-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.mcstats.org/content/repositories/releases/<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>org.mcstats.bukkit<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>metrics<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>LATEST<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="metrics-lite" class="anchor" href="#metrics-lite"><span class="octicon octicon-link"></span></a>Metrics-lite</h2>
+
+<p><a href="https://github.com/Hidendra/Plugin-Metrics/wiki/Usage">https://github.com/Hidendra/Plugin-Metrics/wiki/Usage</a></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>mcstats-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.mcstats.org/content/repositories/releases/<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>org.mcstats.bukkit<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>metrics-lite<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>LATEST<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="gravitys-updater" class="anchor" href="#gravitys-updater"><span class="octicon octicon-link"></span></a>Gravity's updater</h2>
+
+<p><a href="http://forums.bukkit.org/threads/updater-2-1-easy-safe-and-policy-compliant-auto-updating-for-your-plugins-new.96681/page-9#post-2158575">http://forums.bukkit.org/threads/updater-2-1-easy-safe-and-policy-compliant-auto-updating-for-your-plugins-new.96681/page-9#post-2158575</a></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>gravity-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.gravitydevelopment.net<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>net.gravitydevelopment.updater<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>updater<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>LATEST<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="vaultapi" class="anchor" href="#vaultapi"><span class="octicon octicon-link"></span></a>VaultAPI</h2>
+
+<p><a href="http://dev.bukkit.org/bukkit-plugins/vault/">http://dev.bukkit.org/bukkit-plugins/vault/</a><br><a href="http://milkbowl.github.io/VaultAPI/">http://milkbowl.github.io/VaultAPI/</a></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>vault-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://nexus.theyeticave.net/content/repositories/pub_releases<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>net.milkbowl.vault<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>VaultAPI<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+  <span class="nt">&lt;version&gt;</span>RELEASE<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="protocollib" class="anchor" href="#protocollib"><span class="octicon octicon-link"></span></a>ProtocolLib</h2>
+
+<p><a href="http://dev.bukkit.org/bukkit-plugins/protocollib/">http://dev.bukkit.org/bukkit-plugins/protocollib/</a><br><a href="http://aadnk.github.io/ProtocolLib/Javadoc/">http://aadnk.github.io/ProtocolLib/Javadoc/</a></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>comphenix-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.comphenix.net/content/groups/public<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>com.comphenix.protocol<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>ProtocolLib<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+  <span class="nt">&lt;version&gt;</span>LATEST<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="tapapi" class="anchor" href="#tapapi"><span class="octicon octicon-link"></span></a>TapAPI</h2>
+
+<p><a href="http://forums.bukkit.org/threads/tagapi-change-color-the-name-over-peoples-heads.99485/">http://forums.bukkit.org/threads/tagapi-change-color-the-name-over-peoples-heads.99485/</a><br><a href="http://kittehorg.github.io/TagAPI/apidocs/">http://kittehorg.github.io/TagAPI/apidocs/</a></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>kitteh-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.kitteh.org/content/groups/public<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.kitteh<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>tagapi<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+    <span class="nt">&lt;version&gt;</span>3.0<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="essentials" class="anchor" href="#essentials"><span class="octicon octicon-link"></span></a>Essentials</h2>
+
+<p>someone find me a link to general api info for this pls</p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>ess-repo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.ess3.net/content/groups/essentials<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>net.ess3<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>Essentials<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+  <span class="nt">&lt;version&gt;</span>RELEASE<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="citizens" class="anchor" href="#citizens"><span class="octicon octicon-link"></span></a>Citizens</h2>
+
+<p><a href="https://forums.bukkit.org/threads/lib-citizensapi-create-npcs-quickly-and-easily-mc-1-7-x.127674/">https://forums.bukkit.org/threads/lib-citizensapi-create-npcs-quickly-and-easily-mc-1-7-x.127674/</a><br><a href="http://jd.citizensnpcs.co/">http://jd.citizensnpcs.co/</a></p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>everything<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>http://repo.citizensnpcs.co<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+</pre></div>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>net.citizensnpcs<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>citizensapi<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>LATEST<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;scope&gt;</span>provided<span class="nt">&lt;/scope&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/hintss/BukkitMavenRepoListThing/zipball/master" class="button">
+          <a href="https://github.com/hintss/BukkitMavenRepos/zipball/master" class="button">
             <small>Download</small>
             .zip file
           </a>
-          <a href="https://github.com/hintss/BukkitMavenRepoListThing/tarball/master" class="button">
+          <a href="https://github.com/hintss/BukkitMavenRepos/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/hintss/BukkitMavenRepoListThing"></a> is maintained by <a href="https://github.com/hintss">hintss</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/hintss/BukkitMavenRepos"></a> is maintained by <a href="https://github.com/hintss">hintss</a>.</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
